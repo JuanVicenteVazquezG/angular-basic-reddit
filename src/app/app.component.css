@@ -13,3 +13,7 @@ div{
 input{
     float: right;
 }
+
+.field{
+    width:200px;
+}

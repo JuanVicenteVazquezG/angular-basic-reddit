@@ -1,4 +1,4 @@
-<form  class="m-10">
+<form class="m-10">
   <h3>Add a Link</h3>
   <div class="field">
     <label for="title">Title:</label>
@@ -6,8 +6,17 @@
   </div>
   <div class="field">
     <label for="link">Link</label>
-    <input name="link" id="link" type="text" #newlink/>
+    <input name="link" id="link" type="text" #newlink />
   </div>
-  <button (click)="addArticle(newtitle, newlink)" class="primary">Submit link</button>
+  <div class="field">
+    <button (click)="addArticle(newtitle, newlink)" class="primary">
+      Submit link
+    </button>
+  </div>
 </form>
-  <app-article></app-article>
+<ul>
+  <app-article
+    *ngFor="let article of sortArticles()"
+    [article]="article">
+  </app-article>
+</ul>

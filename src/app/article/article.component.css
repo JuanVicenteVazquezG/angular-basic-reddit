@@ -9,3 +9,7 @@ h1{
 button{
     float:left;
 }
+
+mat-card{
+    margin: 20px 0;
+}
