@@ -1,0 +1,15 @@
+div{
+    margin:10px 0;
+}
+
+.m-10{
+    padding: 100px;
+}
+
+.primary{
+    background-color: green;
+}
+
+input{
+    float: right;
+}
